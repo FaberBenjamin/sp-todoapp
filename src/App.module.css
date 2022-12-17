@@ -1,0 +1,176 @@
+body {
+  background-color: hsl(235, 21%, 11%);
+  background-image: url("./images/bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 10px;
+  color: hsl(0, 0%, 98%);
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_container img {
+  width: 50px;
+  height: 50px;
+}
+
+.container_entire {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: auto;
+}
+
+.container_entire h1 {
+  display: flex;
+}
+
+.note {
+  width: 700px;
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+  color: hsl(234, 39%, 85%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.note:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.note img {
+display: none;
+}
+
+.note .img_placeholder {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid hsl(236, 33%, 92%);
+}
+
+.toDoAdd {
+  width: 656px;
+  padding-left: 40px;
+  color: hsl(234, 11%, 52%);
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  border: 0;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.toDoAdd:focus {
+  color: hsl(234, 39%, 85%);
+}
+
+.doneStyles {
+  width: 700px;
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+  color: hsl(234, 11%, 52%);
+  display: flex;
+  align-items: center;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.doneStyles:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.doneStyles .img_placeholder {
+  display: none;
+}
+
+.doneStyles img {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    hsl(192, 100%, 67%) 0%,
+    hsl(280, 87%, 65%) 100%
+  );
+  border-radius: 50%;
+}
+
+.footer_container {
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 11%, 52%);
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex_justifier {
+  display: flex;
+  gap: 20px;
+}
+
+.check {
+  margin-left: 40px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(6, 9, 180);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.label_button:hover {
+  cursor: pointer;
+  color: hsl(236, 33%, 92%);
+}
+
+.active_label {
+  color: hsl(220, 98%, 61%);
+}
+
+@media all and (max-width: 700px) {
+  .container_entire {
+    width: 90vw;
+  }
+  .note {
+    width: 90vw;
+  }
+  .toDoAdd {
+    width: 80vw;
+  }
+
+  .doneStyles {
+    width: 90vw;
+  }
+
+
+  .footer_container {
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
